@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WallHub - Premium Wallpapers</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>WallHub</h1>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search wallpapers...">
+        <button id="search-button">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Discover Beautiful Wallpapers</h2>
+      <p>High-quality wallpapers for your desktop and mobile devices</p>
+      <div class="hero-cta">
+        <a href="#categories" class="btn btn-primary">Browse Categories</a>
+        <a href="#featured" class="btn btn-secondary">Featured Wallpapers</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured" id="featured">
+    <div class="container">
+      <h2>Featured Wallpapers</h2>
+      <div class="featured-slider">
+        <div class="featured-slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1470&q=80')">
+            <div class="featured-content">
+                <h3>Mountain Sunset</h3>
+                <p>Breathtaking views of nature's majesty</p>
+            </div>
+        </div>
+        <div class="featured-slide" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1470&q=80')">
+            <div class="featured-content">
+                <h3>Neon Lights</h3>
+                <p>Vibrant abstract designs for modern setups</p>
+            </div>
+        </div>
+        <div class="featured-slide" style="background-image: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=1470&q=80')">
+            <div class="featured-content">
+                <h3>Galaxy Cluster</h3>
+                <p>Explore the wonders of our universe</p>
+            </div>
+        </div>
+    </div>
+    <div class="slider-controls">
+        <button id="prev-slide" class="slider-control">&lt;</button>
+        <button id="next-slide" class="slider-control">&gt;</button>
+    </div>
+</div>
+  </section>
+
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2>Categories</h2>
+      <div class="category-previews">
+        <div class="category-preview" data-category="nature">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+          <h3>Nature</h3>
+          <p>Landscapes, forests, beaches and more</p>
+        </div>
+        <div class="category-preview" data-category="abstract">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1429&q=80')"></div>
+          <h3>Abstract</h3>
+          <p>Colorful patterns and artistic designs</p>
+        </div>
+        <div class="category-preview" data-category="animals">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1564349683136-77e08dba1ef3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80')"></div>
+          <h3>Animals</h3>
+          <p>Wildlife and pets in stunning detail</p>
+        </div>
+        <div class="category-preview" data-category="space">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80')"></div>
+          <h3>Space</h3>
+          <p>Galaxies, stars, and cosmic phenomena</p>
+        </div>
+        <div class="category-preview" data-category="city">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+          <h3>City</h3>
+          <p>Urban landscapes and cityscapes</p>
+        </div>
+      </div>
+      <div class="category-filters">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="nature">Nature</button>
+        <button class="category-btn" data-category="abstract">Abstract</button>
+        <button class="category-btn" data-category="animals">Animals</button>
+        <button class="category-btn" data-category="space">Space</button>
+        <button class="category-btn" data-category="city">City</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wallpapers">
+    <div class="container">
+      <div id="wallpapers-grid" class="wallpapers-grid">
+        <!-- Wallpapers will be loaded here via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter to get notified about new wallpapers</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="wallpaper-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modal-image" src="" alt="Wallpaper Preview">
+      <div class="modal-details">
+        <h3 id="modal-title"></h3>
+        <p id="modal-category"></p>
+        <a id="modal-download" href="#" download>Download Wallpaper</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>WallHub</h2>
+          <p>Premium wallpapers for everyone</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-categories">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#" data-category="nature">Nature</a></li>
+            <li><a href="#" data-category="abstract">Abstract</a></li>
+            <li><a href="#" data-category="animals">Animals</a></li>
+            <li><a href="#" data-category="space">Space</a></li>
+            <li><a href="#" data-category="city">City</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 WallHub. All rights reserved.</p>
+        <P>Developed by Piyush Koli.</P>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
